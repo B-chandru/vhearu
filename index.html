@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Tailwind-startup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        /** @type {import('tailwindcss').Config} */
+        tailwind.config = {
+        theme: {
+            extend: {
+            keyframes: {
+                circlear: {
+                '0%, 100%': { transform: 'rotate(180deg)' },
+                '50%': { transform: 'rotate(1deg)' },
+                }
+            },
+            animation: {
+                circlear: 'circlear 1s ease-in-out 1s infinite',
+            },
+            // backgroundImage: {
+            //   'h-img': "url('.../img/h-img/svg')",
+            // }
+            },
+  },
+  plugins: [],
+}
+
+    </script>
+</head>
+<body class="min-h-screen  bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-red-500   h-20 flex justify-between items-center sticky  top-0 z-10  pl-10 pr-10 " >
+        <div class="logo text-3xl font-medium capitalize p-4 text-white bg-black rounded-lg">🧑‍💻thidrTech</div>
+        <button class="text-3xl text-white  focus:outline-none sm:hidden">&#9776;</button>
+        <nav class="menu hidden sm:block space-x-8 text-xl" aria-label="main">
+            <ul class="flex gap-10 ">
+                <li><a href="#" class="capitalize text-white hover:bg-white hover:text-red-500 p-3 hover:rounded-md hover:shadow-md">home</a></li>
+                <li><a href="#" class="capitalize text-white hover:bg-white hover:text-red-500 p-3 hover:rounded-md  hover:shadow-md" >about</a></li>
+                <li><a href="#" class="capitalize text-white hover:bg-white hover:text-red-500 p-3 hover:rounded-md  hover:shadow-md">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="  h-96 bg-red-500 flex justify-between items-center gap10 p-24 ">
+        <svg  class=" animate-[circlear_1s_ease-in-out_1s_infinite]" width="304" height="300" viewBox="0 0 304 569" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="117" width="59" height="569" rx="29.5" fill="white"/>
+            <rect width="48" height="129" rx="24" transform="matrix(-1 0 0 1 48 220)" fill="white"/>
+            <rect x="56" y="140" width="49" height="271" rx="24.5" fill="white"/>
+            <rect x="189" y="76" width="54" height="417" rx="27" fill="white"/>
+            <rect x="252" y="146" width="52" height="277" rx="26" fill="white"/>
+            </svg>
+        <div class="text-white uppercase text-6xl font-bold text-center">
+            we hear you
+            <div class="text-white uppercase text-6xl font-bold text-center">when <span class="uppercase text-6xl font-bold text-black" >you need</span> help!</div>
+        </div>
+                <svg  class="animate-[circlear_1s_ease-in-out_1s_infinite]" width="304" height="300" viewBox="0 0 304 569" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="117" width="59" height="569" rx="29.5" fill="white"/>
+                    <rect width="48" height="129" rx="24" transform="matrix(-1 0 0 1 48 220)" fill="white"/>
+                    <rect x="56" y="140" width="49" height="271" rx="24.5" fill="white"/>
+                    <rect x="189" y="76" width="54" height="417" rx="27" fill="white"/>
+                    <rect x="252" y="146" width="52" height="277" rx="26" fill="white"/>
+                    </svg>
+    </section>
+    <section class="h-96 ">
+
+    </section>
+    
+</body>
+</html>
